@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com" defer></script>
+
+    <title>Progression</title>
+</head>
+<body class="bg-black">
+    <div class="m-20">
+        <h1 class="text-2xl md:text-5xl text-purple-500 animate-pulse mt-20 mx-10 font-extrabold text-center">Progress bar with tailwind</h1>
+        <div class="bg-purple-800 h-4 rounded-full">
+            <div class="bg-purple-400 w-3/4 h-full flex justify-end items-center">
+                <p class="text-white text-xs">70%</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="text-white mx-40">
+        <div class="flex justify-center">
+            <h1 class="text-white text-2xl md:text-5xl upercase">Progress bar and Circular</h1>
+        </div>
+
+        <div class="bar">
+            <h2 class="text-xl md:text-3xl">Progress bar</h2>
+        </div>
+        <div class="flex items-center">
+            <div class="skill w-8 h-8 my-3 mr-10">
+                <img src="./assets/html-5.png" alt="html" class="w-8 h-8">
+            </div>
+            <div class="progress-bar w-3/4 bg-yellow-200 h-3 scale-x-0 origin-left">
+                <div class="progress-skill w-11/12 h-full bg-red-500 flex justify-end items-center before:px-0 after:px-4 before:border-transparent before:border-0 after:bg-yellow-500 after:text-white before:opacity-0 after:opacity-0 after:content-['90%'] before:content-[''] ">
+                    <!-- <p class="text-xs text-black "></p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

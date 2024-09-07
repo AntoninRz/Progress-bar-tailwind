@@ -1,0 +1,52 @@
+.progress-bar {
+    animation: animate 1.5s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.progress-skill {
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.progress-skill::after {
+    content: "90%";
+    position: absolute;
+    top: -28px;
+    right: -20px;
+    color: white;
+    background-color: blueviolet;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.progress-skill::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    border-top-color: blueviolet;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
